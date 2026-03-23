@@ -1,0 +1,19 @@
+# pdf-to-llm-context — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# PDF processing
+PyMuPDF==1.24.5
+
+# Google Gemini AI  ← NEW SDK (replaces deprecated google-generativeai)
+google-genai>=0.8.0
+
+# Image processing (cover color extraction)
+Pillow>=10.0.0
+
+# Configuration & environment
+PyYAML>=6.0
+python-dotenv>=1.0.0
+
+# Optional: Anthropic Claude enrichment pass
+# Uncomment if you set enable_claude_enrichment: true in config.yaml
+# anthropic>=0.34.0
