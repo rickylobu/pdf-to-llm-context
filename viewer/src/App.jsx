@@ -84,7 +84,7 @@ export default function App() {
         <h1>⚠️ Setup Required</h1>
         <p>{loadError}</p>
         <a
-          href="https://github.com/YOUR_USERNAME/pdf-to-llm-context#quick-start"
+          href="https://github.com/rickylobu/pdf-to-llm-context#quick-start"
           className="btn-primary"
         >
           View Setup Instructions →
