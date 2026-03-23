@@ -2,12 +2,12 @@
 # Install with: pip install -r requirements.txt
 
 # PDF processing
-PyMuPDF==1.24.5
+pymupdf>=1.24.0
 
-# Google Gemini AI  ← NEW SDK (replaces deprecated google-generativeai)
+# Google Gemini AI - SDK Oficial
 google-genai>=0.8.0
 
-# Image processing (cover color extraction)
+# Image processing
 Pillow>=10.0.0
 
 # Configuration & environment

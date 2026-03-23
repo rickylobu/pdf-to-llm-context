@@ -60,6 +60,39 @@ def main():
         print(f"  [!!] Health check failed:\n       {health['error']}")
         sys.exit(1)
     print(f"  [OK] Model confirmed via {health['api_version']}")
+    print("\n=== Recommended Models for OCR (March 2026) ===")
+
+    print("\n[1] Best for production / high-volume OCR")
+    print("    → gemini-2.5-flash-image")
+    print("       - Excellent OCR + low cost")
+    print("       - Free Tier: YES (Google offers free input/output tokens)")
+    print("       - Pricing: $0.30 input / $2.50 output per 1M tokens "
+        "(TLDL Pricing, Mar 2026)")
+
+    print("\n[2] Best quality OCR (premium)")
+    print("    → gemini-3-pro-image-preview")
+    print("       - Highest OCR fidelity, best for damaged/complex scans")
+    print("       - Free Tier: NO (Pro models not included in free tier)")
+    print("       - Pricing: $2.00 input / $12.00 output per 1M tokens "
+        "(Vertex AI Pricing, Mar 2026)")
+
+    print("\n[3] Best balance of speed, quality, cost")
+    print("    → gemini-3.1-flash-image-preview")
+    print("       - Modern OCR with improved multimodal understanding")
+    print("       - Free Tier: YES (Flash models included in free tier)")
+    print("       - Pricing: $0.50 input / $3.00 output per 1M tokens "
+        "(Vertex AI Pricing, Mar 2026)")
+    
+    print("\n[4] if you are developing on free tier and want to test with the same model, use:")
+    print("    → gemini-3.1-flash-lite-preview")
+    print("       - Basic OCR and multimodal support (sufficient for smoke tests)")
+    print("       - Free Tier: YES (Flash-Lite models included in free tier limits)")
+    print("       - Pricing: $0.25 input / $1.50 output per 1M tokens "
+      "(Vertex AI Pricing, Mar 2026)")  # turn17search4
+
+
+    print("\n==============================================\n")
+    print(f"  [OK] available models: {',\n '.join(health['available_models'])}")
 
     # 4. Text test
     print(f"\n  --> Text test...")

@@ -114,6 +114,7 @@ class GeminiClientManager:
 
             return {
                 "ok": found,
+                "available_models": available,
                 "model": model_name,
                 "api_version": cls.resolve_version(model_name),
                 "error": None if found else (
